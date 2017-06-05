@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="MLOrderHeadCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="Eqw-gi-bj8">
+                    <rect key="frame" x="8" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="LKV-8Q-MS3"/>
+                        <constraint firstAttribute="height" constant="20" id="gSy-Ol-uuQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="美罗百货自营店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkv-jP-1Y4">
+                    <rect key="frame" x="42" y="15" width="193" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.14901960780000001" green="0.054901960780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icv-aH-IVY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pvU-2i-LhU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdV-SF-uJ0">
+                    <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="UCO-Vg-4qH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xdV-SF-uJ0" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="BPG-kY-t9C"/>
+                <constraint firstAttribute="bottom" secondItem="xdV-SF-uJ0" secondAttribute="bottom" id="GuI-xa-ExB"/>
+                <constraint firstAttribute="trailing" secondItem="xdV-SF-uJ0" secondAttribute="trailing" id="HRQ-vh-vFy"/>
+                <constraint firstItem="icv-aH-IVY" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="UGc-0R-Lbl"/>
+                <constraint firstItem="Jkv-jP-1Y4" firstAttribute="leading" secondItem="Eqw-gi-bj8" secondAttribute="trailing" constant="10" id="hm7-sI-XyI"/>
+                <constraint firstItem="icv-aH-IVY" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="mg8-sn-dfy"/>
+                <constraint firstItem="Jkv-jP-1Y4" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="n98-FD-h4a"/>
+                <constraint firstAttribute="trailing" secondItem="Jkv-jP-1Y4" secondAttribute="trailing" constant="2" id="n9G-xS-2cX"/>
+                <constraint firstAttribute="trailing" secondItem="icv-aH-IVY" secondAttribute="trailing" id="oRs-Zz-g4z"/>
+                <constraint firstItem="Eqw-gi-bj8" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="pzz-Wi-06z"/>
+                <constraint firstItem="Eqw-gi-bj8" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="rOD-MF-1B4"/>
+            </constraints>
+            <connections>
+                <outlet property="headImg" destination="Eqw-gi-bj8" id="ZHQ-iM-gPK"/>
+                <outlet property="headTitle" destination="Jkv-jP-1Y4" id="O9Y-dB-8m8"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="3.JPG" width="181" height="136"/>
+    </resources>
+</document>

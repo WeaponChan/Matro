@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MLVipSJdetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="62331562" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej8-wp-6eX">
+                        <rect key="frame" x="10" y="11" width="60" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="准VIP卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24N-CX-2W5">
+                        <rect key="frame" x="87" y="11" width="50" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="lig-jW-lhV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2016年12月22日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4t-i4-Aly">
+                        <rect key="frame" x="150" y="11" width="95" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="r2G-Jx-DhM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="升级至金卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVS-iP-ClN">
+                        <rect key="frame" x="251" y="11" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="RIX-LK-TW8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="va7-Ws-cZk">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fbS-b2-Bl5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="24N-CX-2W5" firstAttribute="trailing" secondItem="G4t-i4-Aly" secondAttribute="leading" constant="-15" id="1oT-zl-jMG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DVS-iP-ClN" secondAttribute="trailing" id="G8Z-3r-jFo"/>
+                    <constraint firstItem="ej8-wp-6eX" firstAttribute="trailing" secondItem="24N-CX-2W5" secondAttribute="leading" constant="-5" id="GJT-dJ-rHB"/>
+                    <constraint firstItem="24N-CX-2W5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KWF-1h-J4G"/>
+                    <constraint firstItem="G4t-i4-Aly" firstAttribute="trailing" secondItem="DVS-iP-ClN" secondAttribute="leading" constant="-15" id="QGC-7Y-fgR"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="ej8-wp-6eX" secondAttribute="leading" constant="-8" id="R7C-3n-u9M"/>
+                    <constraint firstItem="G4t-i4-Aly" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TFK-Rl-T80"/>
+                    <constraint firstItem="va7-Ws-cZk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Z5P-PY-kOv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="va7-Ws-cZk" secondAttribute="trailing" constant="-8" id="bls-Xe-nTS"/>
+                    <constraint firstItem="ej8-wp-6eX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cQ6-98-xlm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="va7-Ws-cZk" secondAttribute="bottom" constant="-9" id="d0y-wV-HHC"/>
+                    <constraint firstItem="DVS-iP-ClN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qds-Ke-48d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardName" destination="24N-CX-2W5" id="LgU-g3-eKa"/>
+                <outlet property="cardNo" destination="ej8-wp-6eX" id="qTQ-Sr-b9u"/>
+                <outlet property="cardStatus" destination="DVS-iP-ClN" id="01B-Ro-K4E"/>
+                <outlet property="cardTime" destination="G4t-i4-Aly" id="GF3-Ej-ATe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

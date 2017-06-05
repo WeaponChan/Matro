@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MLVipCardListViewController">
+            <connections>
+                <outlet property="VipCardTableView" destination="eFz-bf-rQp" id="y7v-HM-jQg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eFz-bf-rQp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="RHL-pE-cav"/>
+                        <outlet property="delegate" destination="-1" id="diR-t3-eSA"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXN-Ua-Xae">
+                    <rect key="frame" x="0.0" y="613" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="如有疑问请联系客服:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKX-3Z-RoG">
+                            <rect key="frame" x="40" y="12" width="139" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQf-dI-rbE">
+                            <rect key="frame" x="187" y="12" width="130" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Efg-ZD-Ife"/>
+                            </constraints>
+                            <state key="normal" title="400-885-0668" backgroundImage="sel_type_g">
+                                <color key="titleColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="actTel:" destination="-1" eventType="touchUpInside" id="o1m-Eu-NMv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sKX-3Z-RoG" firstAttribute="centerY" secondItem="AXN-Ua-Xae" secondAttribute="centerY" id="7Xj-mZ-aXx"/>
+                        <constraint firstItem="HQf-dI-rbE" firstAttribute="centerY" secondItem="AXN-Ua-Xae" secondAttribute="centerY" id="9ad-Z2-xbx"/>
+                        <constraint firstItem="HQf-dI-rbE" firstAttribute="leading" secondItem="sKX-3Z-RoG" secondAttribute="trailing" constant="10" id="jD2-Xh-h51"/>
+                        <constraint firstItem="sKX-3Z-RoG" firstAttribute="leading" secondItem="AXN-Ua-Xae" secondAttribute="leading" constant="40" id="oCe-wU-F9Z"/>
+                        <constraint firstAttribute="height" constant="44" id="zA0-u1-Cir"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eFz-bf-rQp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3zE-he-YB7"/>
+                <constraint firstAttribute="trailing" secondItem="AXN-Ua-Xae" secondAttribute="trailing" id="Gwc-1b-I7X"/>
+                <constraint firstItem="eFz-bf-rQp" firstAttribute="bottom" secondItem="AXN-Ua-Xae" secondAttribute="top" constant="-10" id="IAk-3d-hTu"/>
+                <constraint firstAttribute="bottom" secondItem="AXN-Ua-Xae" secondAttribute="bottom" constant="10" id="X5z-Cx-Vbc"/>
+                <constraint firstAttribute="trailing" secondItem="eFz-bf-rQp" secondAttribute="trailing" id="hBd-Nj-QfK"/>
+                <constraint firstItem="AXN-Ua-Xae" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nLH-Cu-H8O"/>
+                <constraint firstItem="eFz-bf-rQp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vIX-wQ-q5P"/>
+            </constraints>
+            <point key="canvasLocation" x="-18.5" y="-86.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sel_type_g" width="5" height="40"/>
+    </resources>
+</document>
